@@ -28,20 +28,47 @@ int main(int argc, char** argv) {
     printf("Il valore MEDIO e' %f.\n", med);
     
     return (EXIT_SUCCESS);
-}
-
 int massimo(int valori[], int dimensione){
-    // TODO Implementare il corpo della funzione
-    return 0;
+	int max = valori[0];
+	int i;
+	for(i=1; i<dimensione; i++){
+	
+   		if(max<valori[i])
+			{
+    			max = valori[i];
+    		}
+	
+}
+    return max;
 }
 
 int minimo(int valori[], int dimensione){
-    // TODO Implementare il corpo della funzione
-    return 0;
+    int min= valori[0];
+	int i;
+	for(i=1; i<dimensione; i++){
+	
+   		if(min>valori[i])
+			{
+    			min = valori[i];
+    		}
+	
+}
+    return min;
 }
 
 float media(int valori[], int dimensione){
-    // TODO Implementare il corpo della funzione
-    return 0;
+	
+    int conta=1;
+    int somma = valori[0];
+    int media;
+    int i = 1;
+    	while(i<dimensione)
+			{
+				somma=somma+valori[i];
+    			i++;
+    			conta++;
+			}
+   	 
+    media=somma/conta;
+    return media;
 }
-
